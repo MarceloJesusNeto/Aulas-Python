@@ -1,0 +1,46 @@
+#Crie um algoritimo que leia um numero e mostre o seu dobro, triplo e raiz quadrada.
+
+#Etapa 1 - receba o numero 
+
+numero = input("Digite um numero: ")
+
+#Etapa 2 - converter o dado de entrada em numero
+numero = int(numero)
+
+#Etapa 3 - multiplique o numero por 2
+dobro = numero * 2
+
+#Etapa 4 - multiplique o numero por 3
+triplo = numero * 3
+
+#Etapa 5 - multiplique numero por ele mesmo 
+raiz = numero ** 0.5
+
+#Etapa 6 - MOstrar o resultado
+
+print(f'O dobro de {numero} é {dobro}')
+print(f'O triplo de {numero} é {triplo}')
+print(f'O raiz quadrada de {numero} é {raiz}')
+
+#Crie um algoritmo que armazena o nome, idade e altura de uma pessoa. Em seguida, mostre essas informações e calcule o IMC da pessoa 
+###Desafio Extra: Diga se essa pessoa esta acima, abaixo ou no pesso ideal
+
+nome = input("digite seu nome: ")
+idade = input("digite sua idade: ")
+altura = input("Digite sua altura: ")
+peso = input("Digite seu peso: ")
+altura = float(altura)
+peso = float(peso)
+
+IMC = peso / (altura ** 2 )
+
+print(f"Nome {nome} Idade {idade} Altura {altura} IMC {IMC}")
+
+if IMC < 18.5:
+    print("você esta Abaixo do peso")
+elif IMC > 18.5 and IMC < 24.9 :
+    print("você esta Normal")
+elif IMC > 24.9:
+    print("você esta Sobrepeso") 
+else :
+    print("tem obesidade ")   
